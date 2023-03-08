@@ -68,6 +68,8 @@ ul {
 
 .feedback-section{
     padding-top: 3rem;
+    position: relative;
+    z-index: 9999;
 }
 
 .intro-img {
