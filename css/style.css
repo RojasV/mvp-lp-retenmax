@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.pain-list>li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 10%;
+}
+
+.shine {
+    position: absolute;
+    top: -1.79em;
+}
+
+.pain-list>li>img {
+    width: 8%;
+}
+
+
+.pain-list>li>p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.intro-section {
+    background: linear-gradient(#fff, #2E2C26);
+    background: -ms-linear-gradient(#fff, #2E2C26);
+    background: -o-linear-gradient(#fff, #2E2C26);
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 643px;
+    position: relative;
+}
+
+.pain-section {
+    background: #000;
+}
+
+.art-section {
+    background: linear-gradient(#fff, #2E2C26);
+    background: -ms-linear-gradient(#fff, #2E2C26);
+    background: -o-linear-gradient(#fff, #2E2C26);
+    max-height: 585px;
+}
+
+.and-section {
+    background: linear-gradient(#fff, #2E2C26);
+    background: -ms-linear-gradient(#fff, #2E2C26);
+    background: -o-linear-gradient(#fff, #2E2C26);
+    max-height: 607px;
+
+}
+
+.feedback-section{
+    padding-top: 3rem;
+}
+
+.intro-img {
+    position: relative;
+    min-height: 752px;
+    
+}
+
+.intro-img-professionals {
+    position: absolute;
+    bottom: 14.5%;
+}
+
+.intro-img-professional-and {
+    position: absolute;
+    bottom: 19.5%;
+    right: 1%;
+}
+
+.intro-img-professional-art {
+    position: absolute;
+    bottom: 14.5%;
+    left: -12%;
+}
+
+
+.trace-img-holder {
+    width: 22%;
+    position: relative;
+    min-height: 50px;
+}
+
+.intro-text>:first-child {
+    margin-top: 10%;
+}
+
+
+.trace-img {
+    position: absolute;
+    right: 12%;
+}
+
+.carousel-item>img{
+    margin: auto;
+    opacity: 0.6;
+    margin-bottom: 11rem;
+    border-radius: 4px;
+}
+
+.cta-button {
+    display: block;
+    border-style: none;
+    border-radius: 14px;
+    z-index: 72;
+    width: 419px;
+    height: 78px;
+    position: absolute;
+    background-color: #f3a74d;
+    background: -webkit-linear-gradient(#f3a74d, #cf681b);
+    background: -moz-linear-gradient(#f3a74d, #cf681b);
+    background: -ms-linear-gradient(#f3a74d, #cf681b);
+    background: -o-linear-gradient(#f3a74d, #cf681b);
+    background: linear-gradient(#f3a74d, #cf681b);
+    box-shadow: none;
+    text-shadow: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 800;
+    font-family: Montserrat;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.cta-button>span {
+    margin-top: -12px;
+    position: absolute;
+    top: 50%;
+    display: block;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding: 0 8px 0 8px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    color: #fff;
+}
