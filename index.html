@@ -14,23 +14,26 @@
 <body>
     <header class="bg-white">
         <div class="container">
-            <p class="my-2" style="line-height: 24px;"><span
+            <p class="my-2 d-sm-none d-lg-block" style="line-height: 24px;"><span
                     style="font-weight: 200; font-family: Montserrat; font-size: 18px; color: rgb(243, 167, 77); font-style: normal;">PARA
                     EMPRESAS COM</span><span
                     style="font-weight: 700; font-family: Montserrat; font-size: 18px; color: rgb(243, 167, 77);">&nbsp;</span><span
                     style="font-weight: 800; font-family: Montserrat; font-size: 18px; color: rgb(243, 167, 77); font-style: normal;">10
                     A 1000 FUNCIONÁRIOS</span></p>
-            <div class="trace-img-holder">
+            <div class="trace-img-holder d-sm-none">
                 <img class="w-100 trace-img" src="/assets/img/trace.png" alt="">
+            </div>
+            <div class="mobile-logo">
+                <img class="w-50" src="/assets/img/logo-retenmax-removebg-preview.png" alt="">
             </div>
         </div>
 
     </header>
     <main>
         <section class="intro-section">
-            <div class="container d-flex flex-row justify-content-between" style="">
+            <div class="container d-flex" style="">
                 <div class="intro-text col-md-5 d-flex flex-column" style="gap: 2rem;">
-                    <div>
+                    <div class="d-sm-none">
                         <img class="w-50" src="/assets/img/logo-retenmax-removebg-preview.png" alt="">
                     </div>
                     <div class="intro-description">
@@ -57,11 +60,11 @@
 
 
                     </div>
-                    <div style="position: relative;">
-                        <img class="shine" src="./assets/img/cta-shine.png" alt="" style="position: absolute;
+                    <div class="first-cta" style="">
+                        <!-- <img class="shine" src="./assets/img/cta-shine.png" alt="" style="position: absolute;
                         top: -1.79em;
                         right: 5.4rem;
-                        opacity: 0.6;">
+                        opacity: 0.6;"> -->
                         <a href="" class="cta-button">
                             <span>
                                 QUERO RETER MEUS CLIENTES!
@@ -69,7 +72,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="w-50 intro-img">
+                <div class="intro-img">
                     <img class="w-100 intro-img-professionals" src="/assets/img/and-art.png" alt="">
                 </div>
             </div>
@@ -164,10 +167,10 @@
                         min-height: 78px;
                         display: flex;
                         justify-content: center;">
-                            <img class="shine" src="./assets/img/cta-shine.png" alt="" style="position: absolute;
+                            <!-- <img class="shine" src="./assets/img/cta-shine.png" alt="" style="position: absolute;
                             top: -1.79em;
                             left: 5.3rem;
-                            opacity: 0.7;">
+                            opacity: 0.7;"> -->
                             <a href="" class="cta-button">
                                 <span>
                                     QUERO RETER MEUS CLIENTES!
@@ -211,10 +214,10 @@
 
                         </div>
                         <div style="position: relative;">
-                            <img class="shine" src="./assets/img/cta-shine.png" alt="" style="position: absolute;
+                            <!-- <img class="shine" src="./assets/img/cta-shine.png" alt="" style="position: absolute;
                             top: -1.79em;
                             right: 5.4rem;
-                            opacity: 0.6;">
+                            opacity: 0.6;"> -->
                             <a href="" class="cta-button">
                                 <span>
                                     QUERO RETER MEUS CLIENTES!
@@ -263,10 +266,10 @@
 
                         </div>
                         <div style="position: relative;">
-                            <img class="shine" src="./assets/img/cta-shine.png" alt="" style="position: absolute;
+                            <!-- <img class="shine" src="./assets/img/cta-shine.png" alt="" style="position: absolute;
                             top: -1.79em;
                             right: 5.4rem;
-                            opacity: 0.6;">
+                            opacity: 0.6;"> -->
                             <a href="" class="cta-button">
                                 <span>
                                     QUERO RETER MEUS CLIENTES!
@@ -353,12 +356,34 @@
         <section class="form-section">
             <img class="form-bg w-100" src="./assets/img/form-bg.jpg" alt="">
             <div class="container">
-                <div class="d-flex justify-content-center col-md-12 m-auto" style="gap: 12.49%;">
+                <div class="d-flex justify-content-center col-md-12 m-auto" style="position:relative; gap: 25%;">
                     <div class="art-chair w-50 d-flex justify-content-center">
                         <img class="w-100" src="./assets/img/art-chair.png" alt="">
                     </div>
                     <div class="form">
+                        <form action="" method="post" role="form" class="php-email-form">
+                            <div class="mb-3">
+                                <label for="InputEmail1" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="digite seu melhor email...">
+                                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div> -->
+                            </div>
+                            <div class="mb-3">
+                                <label for="InputName" class="form-label">Nome</label>
+                                <input type="text" name="name" class="form-control" id="InputName"
+                                    aria-describedby="emailHelp" placeholder="digite seu nome completo...">
+                                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div> -->
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="celphone" id="celphone"
+                                    placeholder="(99) 9999-99999" required>
+                            </div>
 
+
+                            <button type="submit" class="btn btn-primary mail-submit">Enviar</button>
+                        </form>
                     </div>
                     <div class="and-chair w-50 d-flex justify-content-center">
                         <img class="w-100" src="./assets/img/and-chair.png" alt="">
@@ -368,15 +393,45 @@
         </section>
 
     </main>
-    <footer>
-
-    </footer>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Retenmax</h4>
+              <p>Endereço: Rua do Comércio, 123 - São Paulo/SP</p>
+              <p>Telefone: (11) 1234-5678</p>
+              <p>E-mail: contato@retenmax.com.br</p>
+            </div>
+            <div class="col-md-6">
+              <h4>Redes Sociais</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+
+    <!-- Template Mail Sender JS File -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="/js/mailSender.js"></script>
+
+    <!-- Mask JS File -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="./js/inputMakHandler.js"></script>
 </body>
 
 </html>

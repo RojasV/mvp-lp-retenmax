@@ -47,6 +47,10 @@ ul {
     position: relative;
 }
 
+.intro-section>div {
+    justify-content: space-between;
+}
+
 .pain-section {
     background: #000;
 }
@@ -73,12 +77,32 @@ ul {
 }
 
 .form-section {
-  
+
     max-height: 607px;
     position: relative;
 }
 
-.form-bg{
+.form {
+    background: linear-gradient(#2E2C26, #fff);
+    background: -ms-linear-gradient(#2E2C26, #fff);
+    background: -o-linear-gradient(#2E2C26, #fff);
+    border-radius: 4px;
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    height: 583px;
+
+}
+
+.form>form {
+    margin: 5%;
+}
+
+label {
+    color: #fff;
+}
+
+.form-bg {
     max-height: 45.6rem;
     position: absolute;
     z-index: -2;
@@ -87,6 +111,7 @@ ul {
 .intro-img {
     position: relative;
     min-height: 752px;
+    width: 50%;
 
 }
 
@@ -161,6 +186,17 @@ ul {
     background-repeat: no-repeat;
 }
 
+.intro-description {
+
+    margin-top: 5rem;
+}
+
+.first-cta {
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+
 .cta-button>span {
     margin-top: -12px;
     position: absolute;
@@ -175,4 +211,105 @@ ul {
 
 .cta-button:hover {
     color: #fff;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+.d-lg-block {
+    display: block;
+}
+
+.footer {
+    min-height: 9rem;
+    background: #000;
+    margin-top: 7.5rem;
+}
+
+
+/* CSS para responsividade */
+
+@media screen and (max-width: 768px) {
+    .my-2 {
+        text-align: center;
+    }
+
+    .first-cta {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .d-sm-none {
+        display: none;
+    }
+
+    .intro-section>div {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-button {
+        position: relative;
+        width: 380px;
+    }
+
+    .and-section {
+        max-height: none;
+        padding-bottom: 3rem;
+    }
+
+    .and-section>div>div {
+        padding-left: 6px;
+    }
+
+    .art-section {
+        max-height: none;
+        padding-bottom: 3rem;
+    }
+
+    .art-section>div>div {
+        padding-left: 6px;
+    }
+
+    .intro-section {
+        height: unset;
+        padding-bottom: 3rem;
+    }
+
+    .mobile-logo {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .intro-img {
+        min-height: 252px;
+        width: 80%;
+    }
+
+    .intro-description {
+        text-align: center;
+        margin-top: unset;
+    }
+
+    .intro-description>:first-child {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .intro-img-professionals {
+        position: unset;
+        padding-right: 5%;
+    }
+
+
+
 }
