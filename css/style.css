@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -251,6 +252,9 @@ label {
     display: flex;
 }
 
+.mobile-span{
+    color: #fff;
+}
 
 
 /* CSS para responsividade */
@@ -403,6 +407,10 @@ label {
 
     .feedback-img {
         width: 50%;
+    }
+
+    .mobile-span{
+        color: #000;
     }
 
 
