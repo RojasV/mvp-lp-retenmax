@@ -2,6 +2,8 @@ class MailSender {
     constructor() {
         this.mailEl = document.querySelector('.php-email-form')
         this.submitBtn = document.querySelector('.mail-submit')
+        this.spinnerEl = document.querySelector('.spinner-border')
+        this.formContainerEl = document.querySelector('.form-container')
         this.sendMail()
 
     }
@@ -11,6 +13,8 @@ class MailSender {
             e.preventDefault()
 
             this.submitBtn.setAttribute("disabled", true)
+            this.spinnerEl.style.display = "block"
+            this.formContainerEl.classList.add("opacity")
 
             const formData = new FormData(this.mailEl)
 
@@ -24,8 +28,11 @@ class MailSender {
 
             emailjs.send('service_0lhss64', "template_4ndxcal", templateParams, 'gQaGWN1YCHugVnOdV')
                 .then(() => {
-
                     this.successAlertHandler(templateParams.from_name)
+                    this.submitBtn.setAttribute("disabled", false)
+                    this.mailEl.reset()
+                    this.spinnerEl.style.display = "none"
+                    this.formContainerEl.classList.remove("opacity")
                 })
                 .catch(err => {
                     console.log(err)
@@ -33,7 +40,7 @@ class MailSender {
         })
     }
 
-   
+
 
     successAlertHandler(user) {
         Swal.fire({
