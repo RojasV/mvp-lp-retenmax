@@ -8,6 +8,9 @@
     <title>RETENMAX</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -225,8 +228,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="w-50 intro-img">
-                        <img class="w-75 intro-img-professional-and" src="/assets/img/and.png" alt="">
+                    <div class="intro-img intro-img-and-art">
+                        <img class="intro-img-professional-and" src="/assets/img/and.png" alt="">
                     </div>
                 </div>
             </div>
@@ -234,8 +237,8 @@
         <section class="art-section">
             <div class="container">
                 <div class="container d-flex flex-row justify-content-between" style="">
-                    <div class="w-50 intro-img">
-                        <img class="w-75 intro-img-professional-art" src="/assets/img/art.png" alt="">
+                    <div class="intro-img intro-img-and-art">
+                        <img class="intro-img-professional-art " src="/assets/img/art.png" alt="">
                     </div>
                     <div class="intro-text col-md-5 d-flex flex-column" style="gap: 2rem;">
 
@@ -291,8 +294,45 @@
                                     style="font-style: normal;">Quem confia na RETENMAX</span></span>
                         </p>
                     </div>
+
                 </div>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="card feedback-card d-lg-none d-sm-block">
+                    <div class="">
+                        <img src="./assets/img/woman-farma.jpeg" class="d-block feedback-img" alt="...">
+                        <div class="">
+                            <h5> "Não sabia exatamente como ser líder e ter gestão de pessoas na minha empresa. A
+                                Retenmax orientou de forma a ficar claro essa etapa para que possamos crescer".</h5>
+                            <p>Marília Barralho - CEO Drogaria Popular Jardim Aeroporto</p>
+
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="./assets/img/woman-2.jpeg" class="d-block feedback-img" alt="...">
+                        <div class="">
+                            <h5>"Retenmax são maravilhosos, eles realmente mudam a perspectiva sobre gestão
+                                empresarial". </h5>
+                            <p>Aline Santos - CEO Super Estágios Campo Grande MS</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="./assets/img/vis-a-vis.jpeg" class="d-block feedback-img" alt="...">
+                        <div class="">
+                            <h5>"Gosto muito da Retenmax. Eles mudaram a visão da minha empresa e dos meus
+                                colaboradores. Conto muito com eles para crescer ainda mais".</h5>
+                            <p>Nayara Barbosa - CEO Grupo Vis A Vis</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="./assets/img/body-workout.jpeg" class="d-block feedback-img" alt="...">
+                        <div class="">
+                            <h5>"Não sabia a complexidade e o nível de envolvimento da Retenmax na minha empresa.
+                                Começou como apenas uma consultoria, porém tomou proporções muito melhores para
+                                nós".</h5>
+                            <p>Rodrigo Rezende - CEO Workout 365</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleCaptions" class="carousel slide d-sm-none d-lg-block" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -354,38 +394,58 @@
         </section>
 
         <section class="form-section">
-            <img class="form-bg w-100" src="./assets/img/form-bg.jpg" alt="">
+            <!-- <img class="form-bg w-100" src="./assets/img/form-bg.jpg" alt=""> -->
             <div class="container">
+                <div class="col-md-12 d-flex justify-content-center" style="padding-top: 3rem">
+                    <div class="col-md-10">
+                        <p style="line-height: 58px; text-align: center;"><span
+                                style="font-weight: 700; font-family: Montserrat; font-size: 46px; color: rgb(255, 154, 50);"><span
+                                    style="font-style: normal;">Retenha o máximo de clientes para sua empresa em um
+                                    curto período de tempo</span></span>
+                        </p>
+                        <p class="text-center" style="font-size: 20px; color: #FFF;">
+                            <span style="font-size: 20px; color: #FFF;">
+                                Preencha o formulário abaixo para reter seus clientes!
+                            </span>
+                        </p>
+                    </div>
+
+                </div>
                 <div class="d-flex justify-content-center col-md-12 m-auto" style="position:relative; gap: 25%;">
-                    <div class="art-chair w-50 d-flex justify-content-center">
+                    <div class="art-chair w-50  justify-content-center">
                         <img class="w-100" src="./assets/img/art-chair.png" alt="">
                     </div>
                     <div class="form">
                         <form action="" method="post" role="form" class="php-email-form">
-                            <div class="mb-3">
-                                <label for="InputEmail1" class="form-label">Email</label>
+                            <div class="mb-4">
+                                <label for="InputEmail1" class="form-label">Email *</label>
                                 <input type="email" name="email" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" placeholder="digite seu melhor email...">
                                 <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
                                 </div> -->
                             </div>
-                            <div class="mb-3">
-                                <label for="InputName" class="form-label">Nome</label>
+                            <div class="mb-4">
+                                <label for="InputName" class="form-label">Nome *</label>
                                 <input type="text" name="name" class="form-control" id="InputName"
                                     aria-describedby="emailHelp" placeholder="digite seu nome completo...">
                                 <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
                                 </div> -->
                             </div>
-                            <div class="form-group mt-3">
+                            <div class="form-group mt-3 mb-4">
+                                <label for="celphone" class="form-label">WhatsApp com DDD *</label>
                                 <input type="text" class="form-control" name="celphone" id="celphone"
                                     placeholder="(99) 9999-99999" required>
                             </div>
-
-
-                            <button type="submit" class="btn btn-primary mail-submit">Enviar</button>
+                            <div class="mb-5" style="position: relative; display: flex; justify-content: center;">
+                                <button type="submit" class="cta-button mail-submit">QUERO RETER MEUS CLIENTES!</button>
+                            </div>
+                            <div class="form-logo text-center">
+                                <img class="w-50" src="/assets/img/logo-retenmax-removebg-preview.png" alt=""
+                                    style="margin-right: 0.9rem;">
+                            </div>
                         </form>
                     </div>
-                    <div class="and-chair w-50 d-flex justify-content-center">
+                    <div class="and-chair w-50 justify-content-center">
                         <img class="w-100" src="./assets/img/and-chair.png" alt="">
                     </div>
                 </div>
@@ -395,26 +455,20 @@
     </main>
     <footer class="footer">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h4>Retenmax</h4>
-              <p>Endereço: Rua do Comércio, 123 - São Paulo/SP</p>
-              <p>Telefone: (11) 1234-5678</p>
-              <p>E-mail: contato@retenmax.com.br</p>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="footer-content m-3" style="color: #fff;">
+                        <h4>Retenmax</h4>
+                        <p>Endereço: Rua José Antônio, 95 - Campo Grande / MS</p>
+                        <p>Telefone: (67) +55 999482501</p>
+                        <p>E-mail: contato@retenmax.com.br</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-md-6">
-              <h4>Redes Sociais</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </footer>
-      
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
     </script>

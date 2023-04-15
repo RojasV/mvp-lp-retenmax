@@ -72,13 +72,14 @@ ul {
 
 .feedback-section {
     padding-top: 3rem;
+    padding-bottom: 1rem;
     position: relative;
     z-index: 9999;
 }
 
 .form-section {
-
-    max-height: 607px;
+    background: linear-gradient(#2E2C26, #fff);
+    max-height: 857px;
     position: relative;
 }
 
@@ -87,12 +88,17 @@ ul {
     background: -ms-linear-gradient(#2E2C26, #fff);
     background: -o-linear-gradient(#2E2C26, #fff);
     border-radius: 4px;
-    width: 30%;
+    width: 40%;
     position: absolute;
-    top: 20%;
-    height: 583px;
-
+    top: 10%;
+    height: 657px;
 }
+
+.form-logo{
+    margin-top: 17rem;
+}
+
+
 
 .form>form {
     margin: 5%;
@@ -124,12 +130,14 @@ label {
     position: absolute;
     bottom: 19.5%;
     right: 1%;
+    width: 75%;
 }
 
 .intro-img-professional-art {
     position: absolute;
     bottom: 14.5%;
     left: -12%;
+    width: 75%;
 }
 
 
@@ -141,6 +149,10 @@ label {
 
 .intro-text>:first-child {
     margin-top: 10%;
+}
+
+.feedback-img {
+    width: 25%;
 }
 
 
@@ -221,11 +233,24 @@ label {
     display: block;
 }
 
+.d-lg-none {
+    display: none;
+}
+
 .footer {
     min-height: 9rem;
     background: #000;
     margin-top: 7.5rem;
 }
+
+.art-chair{
+    display: flex;
+}
+
+.and-chair{
+    display: flex;
+}
+
 
 
 /* CSS para responsividade */
@@ -240,9 +265,44 @@ label {
         display: flex;
         justify-content: center;
     }
+    
+    .form {
+        background: linear-gradient(#2E2C26, #fff);
+        background: -ms-linear-gradient(#2E2C26, #fff);
+        background: -o-linear-gradient(#2E2C26, #fff);
+        border-radius: 4px;
+        width: 98%;
+        position: absolute;
+        top: 10%;
+        height: 481px;
+    }
+
+    .footer{
+        margin-top: 33.5rem;
+    }
+
+    .form-logo{
+        margin-top: unset;
+    }
+
+    .art-chair{
+        display: none;
+    }
+
+    .and-chair{
+        display: none;
+    }
+
+    .mail-submit{
+        width: 342px !important;
+    }
 
     .d-sm-none {
         display: none;
+    }
+
+    .d-sm-block {
+        display: block;
     }
 
     .intro-section>div {
@@ -287,7 +347,12 @@ label {
 
     .intro-img {
         min-height: 252px;
-        width: 80%;
+        width: 92%;
+        height: 100%;
+    }
+
+    .intro-img-and-art {
+        position: absolute !important;
     }
 
     .intro-description {
@@ -309,6 +374,35 @@ label {
     .intro-img-professionals {
         position: unset;
         padding-right: 5%;
+    }
+
+    .intro-img-professional-and {
+        position: absolute;
+        width: 100%;
+        bottom: 11.9%;
+        left: 3%;
+    }
+
+    .intro-img-professional-art {
+        z-index: 1;
+        position: absolute;
+        bottom: 3.5%;
+        left: -44%;
+        width: 100%;
+    
+    }
+
+    .feedback-card>div {
+        text-align: center;
+        margin: 12px;
+    }
+
+    .feedback-card>div>img {
+        margin: auto;
+    }
+
+    .feedback-img {
+        width: 50%;
     }
 
 
