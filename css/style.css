@@ -364,7 +364,8 @@ label {
     }
 
     .intro-img-and-art {
-        position: absolute !important;
+        /* position: absolute !important; */
+        display: none;
     }
 
     .intro-description {
